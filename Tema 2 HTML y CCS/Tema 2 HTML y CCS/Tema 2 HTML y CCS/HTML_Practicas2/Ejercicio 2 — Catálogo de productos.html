@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de productos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #555555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #234a72;
+            color: white;
+        }
+
+        .agotado {
+            background-color: #ffcccc;
+            color: #990000;
+        }
+
+        a {
+            color: #0759a5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de productos informáticos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Disponibilidad</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Teclado</td>
+                <td>25,00 €</td>
+                <td>15</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=teclado"
+                    target="_blank" rel="noopener noreferrer">Ver producto</a></td>
+            </tr>
+
+            <tr>
+                <td>P002</td>
+                <td>Ratón</td>
+                <td>12,00 €</td>
+                <td>30</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=raton"
+                    target="_blank" rel="noopener noreferrer">Ver producto</a></td>
+            </tr>
+
+            <tr class="agotado">
+                <td>P003</td>
+                <td>Monitor</td>
+                <td>180,00 €</td>
+                <td>0</td>
+                <td>Agotado</td>
+                <td><a href="https://www.google.com/search?q=monitor"
+                    target="_blank" rel="noopener noreferrer">Ver producto</a></td>
+            </tr>
+
+            <tr>
+                <td>P004</td>
+                <td>Auriculares</td>
+                <td>35,00 €</td>
+                <td>8</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=auriculares"
+                    target="_blank" rel="noopener noreferrer">Ver producto</a></td>
+            </tr>
+
+            <tr>
+                <td>P005</td>
+                <td>Webcam</td>
+                <td>45,00 €</td>
+                <td>3</td>
+                <td>Disponible</td>
+                <td><a href="https://www.google.com/search?q=webcam"
+                    target="_blank" rel="noopener noreferrer">Ver producto</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

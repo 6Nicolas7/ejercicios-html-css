@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción al curso</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Formulario de inscripción</h1>
+
+        <form action="resultado.php" method="POST">
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni"
+                   pattern="[0-9]{8}[A-Za-z]" required>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento"
+                   name="nacimiento" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="ciclo">Ciclo formativo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="">Selecciona un ciclo</option>
+                <option value="ASIR">ASIR</option>
+                <option value="DAW">DAW</option>
+                <option value="DAM">DAM</option>
+                <option value="SMR">SMR</option>
+            </select>
+
+            <fieldset>
+                <legend>Turno preferido</legend>
+
+                <label class="opcion">
+                    <input type="radio" name="turno"
+                           value="Mañana" required>
+                    Mañana
+                </label>
+
+                <label class="opcion">
+                    <input type="radio" name="turno"
+                           value="Tarde">
+                    Tarde
+                </label>
+            </fieldset>
+
+            <label for="modalidad">Modalidad:</label>
+            <select id="modalidad" name="modalidad" required>
+                <option value="">Selecciona una modalidad</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Semipresencial">Semipresencial</option>
+                <option value="Online">Online</option>
+            </select>
+
+            <label class="opcion">
+                <input type="checkbox" name="privacidad"
+                       value="Sí" required>
+                Acepto la política de privacidad
+            </label>
+
+            <button type="submit">Inscribirme</button>
+            <button type="reset" class="secundario">
+                Limpiar
+            </button>
+        </form>
+    </main>
+</body>
+</html>
